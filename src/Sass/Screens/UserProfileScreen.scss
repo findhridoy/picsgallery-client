@@ -1,0 +1,137 @@
+.userProfile {
+  display: grid;
+  // padding: 2rem 7rem;
+  // flex-direction: column;
+  @media screen and (min-width: 768px) {
+    // flex-direction: row;
+    // justify-content: space-between;
+    grid-template-columns: 1fr 2fr;
+  }
+  .userProfile__profile-details {
+    box-shadow: $shadow-all;
+    padding: 2rem;
+    // width: 40%;
+    margin: 0 auto;
+    margin-bottom: $m-3-5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    // justify-content: center;
+    @media screen and (min-width: 768px) {
+      align-items: flex-start;
+      box-shadow: none;
+    }
+    .profile__image {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      border: $border-gray;
+    }
+    .profile__name {
+      font-size: $medium-font;
+      font-weight: $semi-bold;
+      margin-top: $m-1;
+    }
+    .profile__username,
+    .profile__email {
+      font-size: $small-font;
+      font-weight: $semi-bold;
+      color: $dark-500;
+    }
+    .profile__edit-btn {
+      // display: block;
+      width: 100%;
+      button {
+        width: 100%;
+        margin-top: $m-1;
+        background-color: $primary-500;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        padding: 0.6rem 0;
+        font-size: $normal-font;
+        font-weight: $semi-bold;
+        font-family: $jost;
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+  .userProfile__order-details {
+    box-shadow: $shadow-all;
+    padding: 2rem 1.8rem;
+    // width: 100%;
+    overflow-x: auto;
+    @media screen and (min-width: 768px) {
+      margin-left: 5rem;
+    }
+    @media screen and (min-width: 992px) {
+      margin-left: 8rem;
+    }
+    .order__orderTitle {
+      font-size: $medium-icon;
+      font-weight: $semi-bold;
+    }
+    .orderList__table {
+      margin-top: $m-1;
+      width: 100%;
+      border-collapse: collapse;
+      td {
+        border: $border-dark-300;
+        padding: 0.5rem 1rem;
+        font-size: $very-small-font;
+        font-weight: $semi-bold;
+      }
+      th {
+        background-color: $dark-300;
+        border: $border-dark;
+        padding: 1rem;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: $very-small-font;
+        &:last-child {
+          text-align: center;
+        }
+        &:nth-child(4) {
+          text-align: center;
+        }
+      }
+      tr:nth-child(even) {
+        background-color: $dark-100;
+      }
+      tr {
+        td {
+          .userList__checkPaid {
+            text-align: center;
+            .global__icon {
+              font-size: 2.2rem;
+            }
+          }
+          .orderList__table-btn {
+            display: flex;
+            justify-content: center;
+            button {
+              font-size: $small-font;
+              border: none;
+              background-color: $original-gray;
+              color: $white;
+              font-weight: $semi-bold;
+              font-family: $jost;
+              cursor: pointer;
+              width: 100%;
+              padding: 0.3rem 0.5rem;
+              &:hover {
+                background-color: $primary;
+              }
+            }
+          }
+        }
+      }
+      // tr:hover {
+      //   background-color: $light;
+      // }
+    }
+  }
+}

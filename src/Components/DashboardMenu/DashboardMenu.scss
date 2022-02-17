@@ -1,0 +1,32 @@
+.dashboardMenu {
+  position: fixed;
+  height: 100%;
+  box-shadow: $shadow-all;
+  left: 0;
+  width: 23rem;
+  padding-top: 5rem;
+  nav {
+    ul {
+      li {
+        .nav__item {
+          font-size: 1.7rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          padding: 1.2rem 0 1.2rem 5rem;
+          color: $dark;
+          &:hover {
+            background-color: $light;
+          }
+          span {
+            margin-left: 1rem;
+          }
+        }
+        .nav__item-active {
+          background-color: $light;
+          color: $info;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.paymentMethod {
+  // padding: 0 7rem;
+  .paymentMethod__title {
+    font-size: $medium-font;
+    font-weight: $semi-bold;
+    color: $dark;
+    margin-bottom: $m-1;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    .paymentMethod__radio {
+      border: $border-dark-300;
+      padding: $p-1-5 $p-2;
+      display: flex;
+      font-size: $normal-font;
+      font-weight: $semi-bold;
+      margin-bottom: $m-1-5;
+      input {
+        margin-right: 1rem;
+        margin-top: 0.9rem;
+      }
+      .paymentMethod__radio-label {
+        display: flex;
+        flex-direction: column;
+        .paymentMethod__radio-divider {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            width: 45%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .paypal__image {
+            width: 5rem;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .paymentMethod__label-description {
+          font-size: $very-small-font;
+          font-weight: $semi-bold;
+          color: $dark-500;
+          margin-top: $m-1;
+          @media screen and (min-width: 576px) {
+            font-size: $small-font;
+          }
+        }
+      }
+    }
+    .error__radio {
+      border: $border-danger;
+    }
+    button {
+      width: 100%;
+      background-color: $primary-500;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      height: 4rem;
+      font-size: $small-font;
+      font-weight: $semi-bold;
+      font-family: $jost;
+      @media screen and (min-width: 576px) {
+        width: 15rem;
+        font-size: $normal-font;
+      }
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.productScreen {
+  padding-top: $p-3;
+  padding-bottom: $p-4;
+  .productScreen__area {
+    @media screen and (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 4rem;
+    }
+    .productScreen__image {
+      box-shadow: $shadow-all;
+      padding: $p-3 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: $m-3;
+      @media screen and (min-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}

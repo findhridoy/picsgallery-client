@@ -1,0 +1,111 @@
+.addProduct {
+  .addProduct__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .addProduct__form {
+    // background: gray;
+    max-width: 60rem;
+    margin-top: 3rem;
+    .addProduct__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      .addProduct__label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 0.6rem;
+      }
+      .addProduct__input {
+        width: 100%;
+        border: $border-gray;
+        outline: none;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: "Jost", sans-serif;
+        &:focus {
+          box-shadow: $shadow;
+        }
+        &:hover {
+          box-shadow: $shadow;
+        }
+      }
+      .addProduct__select {
+        option {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: $original-gray;
+          &:first-child {
+            font-size: 1.6rem;
+            color: $dark;
+          }
+        }
+      }
+      .addProduct__ {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $danger;
+        margin-top: 0.2rem;
+      }
+    }
+    .addProduct__divider {
+      display: flex;
+      justify-content: space-between;
+      .addProduct__field {
+        .addProduct__input {
+          width: 29rem;
+        }
+
+        .addProduct__input-file {
+          border: $border-gray;
+          padding: 0.5rem;
+          width: 29rem;
+          &:focus {
+            box-shadow: $shadow;
+          }
+          &:hover {
+            box-shadow: $shadow;
+          }
+          &::-webkit-file-upload-button {
+            display: none;
+          }
+          &::before {
+            content: "Select image";
+            display: inline-block;
+            border: $border-gray;
+            outline: none;
+            padding: 0.5rem;
+            font-size: 1.4rem;
+            white-space: nowrap;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: "Jost", sans-serif;
+            margin-right: 1rem;
+          }
+          &:hover::before {
+            border-color: $primary;
+          }
+          &:active::before {
+            border-color: $primary;
+          }
+        }
+      }
+    }
+    .addProduct__button {
+      width: 100%;
+      margin-top: 2rem;
+      background-color: $primary;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      padding: 1.2rem 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: "Jost", sans-serif;
+      &:hover {
+        background-color: $primary-dark;
+      }
+    }
+  }
+}

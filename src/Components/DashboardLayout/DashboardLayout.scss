@@ -1,0 +1,9 @@
+.dashboardLayout {
+  display: grid;
+  grid-template-columns: 23rem auto;
+  height: 100%;
+  .dashboardLayout__items {
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+}

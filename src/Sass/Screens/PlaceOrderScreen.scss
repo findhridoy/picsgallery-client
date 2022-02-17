@@ -1,0 +1,86 @@
+.placeOrder {
+  padding-bottom: $p-4;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .placeOrder__1st-half {
+    margin-bottom: $m-4;
+    @media screen and (min-width: 768px) {
+      width: 55%;
+    }
+    .placeOrder__paymentMethod {
+      border-bottom: $border-dark-300;
+      padding-bottom: $p-1-5;
+      .title {
+        font-size: $medium-font;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+        color: $dark-500;
+        letter-spacing: 0.2rem;
+        @media screen and (min-width: 992px) {
+          font-size: $medium-icon;
+        }
+      }
+      .method {
+        margin-top: $m-0-5;
+        font-size: $normal-font;
+        font-weight: $semi-bold;
+        color: $dark-500;
+        span {
+          color: $dark;
+        }
+      }
+    }
+    .placeOrder__orderItems {
+      margin-top: $m-1-5;
+      .title {
+        font-size: $medium-font;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+        color: $dark-500;
+        letter-spacing: 0.2rem;
+        @media screen and (min-width: 992px) {
+          font-size: $medium-icon;
+        }
+      }
+      .orderItems {
+        .orderItems__table {
+          margin-top: $m-1;
+          width: 100%;
+          border-collapse: collapse;
+          tr {
+            border-bottom: $border-dark-300;
+            &:last-child {
+              border: none;
+            }
+            td {
+              padding: 1rem 0.5rem 0.4rem 0.5rem;
+              font-size: $very-small-font;
+              font-weight: $semi-bold;
+              color: $dark-500;
+              @media screen and (min-width: 768px) {
+                font-size: $small-font;
+              }
+              @media screen and (min-width: 992px) {
+                font-size: $normal-font;
+              }
+              img {
+                width: 3rem;
+                height: 4rem;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .placeOrder__2nd-half {
+    @media screen and (min-width: 768px) {
+      width: 40%;
+    }
+  }
+}

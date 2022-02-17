@@ -1,0 +1,46 @@
+.multiStepNav {
+  margin-top: $m-1;
+  .multiStepNav__link {
+    font-size: $small-font;
+    font-weight: $semi-bold;
+    color: $primary;
+    margin-right: $m-1-5;
+    @media screen and (min-width: 576px) {
+      font-size: $normal-font;
+      margin-right: $m-2;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: $m-3-5;
+    }
+    @media screen and (min-width: 992px) {
+      margin-right: $m-5;
+    }
+  }
+  button {
+    font-size: $small-font;
+    font-weight: $semi-bold;
+    color: $primary;
+    margin-right: $m-1-5;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    font-family: $jost;
+    cursor: pointer;
+    @media screen and (min-width: 576px) {
+      margin-right: $m-2;
+      font-size: $normal-font;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: $m-3-5;
+    }
+    @media screen and (min-width: 992px) {
+      margin-right: $m-5;
+    }
+    &:disabled,
+    &[disabled] {
+      color: $dark-500;
+      pointer-events: auto;
+      cursor: not-allowed;
+    }
+  }
+}

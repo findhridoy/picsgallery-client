@@ -1,0 +1,23 @@
+.footerLinks {
+  margin-top: $m-1-5;
+  .footerLinks__title {
+    p {
+      font-size: $medium-font;
+      font-weight: $bold;
+    }
+  }
+  ul {
+    margin-top: $m-0-5;
+    li {
+      margin-top: 0.3rem;
+      .footerLinks__items {
+        color: $dark;
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

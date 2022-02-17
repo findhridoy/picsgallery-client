@@ -1,0 +1,77 @@
+.banner {
+  .banner__headline {
+    margin-top: $m-1;
+    @media screen and (min-width: 768px) {
+      margin-top: $m-1-5;
+    }
+    p {
+      font-weight: $semi-bold;
+      font-size: $normal-font;
+      letter-spacing: 0.1rem;
+      border: $border-dark;
+      text-align: center;
+      padding: $p-0-5 $p-3;
+      display: inline-block;
+    }
+  }
+  .banner__title-area {
+    margin-top: $m-3;
+    .banner__title-one,
+    .banner__title-two {
+      p {
+        font-size: 7.5rem;
+        font-family: $josefin;
+        text-transform: uppercase;
+        font-weight: $bolder;
+        letter-spacing: -0.5rem;
+        margin-left: -0.8rem;
+        line-height: 1.2;
+        @media screen and (min-width: 576px) {
+          font-size: 10rem;
+          margin-left: -0.9rem;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 12.5rem;
+          margin-left: -1rem;
+        }
+        @media screen and (min-width: 992px) {
+          font-size: 15rem;
+          margin-left: -1.3rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 17rem;
+          margin-left: -1.5rem;
+        }
+      }
+    }
+    .banner__title-two {
+      @media screen and (min-width: 576px) {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        color: $warning;
+      }
+      .banner__author {
+        border-bottom: $border-dark;
+        display: inline-block;
+        padding-bottom: $p-0-5;
+        font-weight: $semi-bold;
+        font-size: $small-font;
+        @media screen and (min-width: 576px) {
+          margin-left: $m-2;
+        }
+        @media screen and (min-width: 768px) {
+          margin-left: $m-3;
+        }
+        @media screen and (min-width: 992px) {
+          margin-left: $m-4;
+        }
+        span {
+          font-weight: $bold;
+          font-size: $normal-font;
+        }
+      }
+    }
+  }
+}

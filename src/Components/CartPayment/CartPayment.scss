@@ -1,0 +1,125 @@
+.cartPayment {
+  // position: sticky;
+  // top: 4%;
+  // max-width: 50rem;
+  // margin: auto;
+  box-shadow: $shadow-all;
+  padding: $p-2;
+  .cartPayment__title {
+    font-size: $medium-font;
+    font-weight: $semi-bold;
+    padding-bottom: $p-2;
+    @media screen and (min-width: 992px) {
+      font-size: $medium-icon;
+    }
+  }
+  .cartPayment__amount {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $border-dark-300;
+    border-top: $border-dark-300;
+    padding: $p-2 0;
+    .amount__order-total {
+      font-size: $small-font;
+      @media screen and (min-width: 992px) {
+        font-size: $normal-font;
+      }
+    }
+    .amount__price {
+      font-size: $small-font;
+      font-weight: $bold;
+      text-align: right;
+      @media screen and (min-width: 992px) {
+        font-size: $normal-font;
+      }
+    }
+  }
+  .cartPayment__coupon {
+    padding: $p-1-5 0;
+    border-bottom: $border-gray;
+    ul {
+      text-align: center;
+      .coupon__title {
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        color: $primary;
+        cursor: pointer;
+        display: inline;
+        @media screen and (min-width: 992px) {
+          font-size: $normal-font;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .coupon__field-label {
+      font-size: $very-small-font;
+      font-weight: $semi-bold;
+      margin-bottom: 0.3rem;
+      @media screen and (min-width: 992px) {
+        font-size: $small-font;
+      }
+    }
+    .coupon__field {
+      form {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1rem;
+        input {
+          width: 90%;
+          border: $border-gray;
+          outline: none;
+          height: 3.5rem;
+          padding: $p-0-5;
+          font-size: $small-font;
+          font-weight: $semi-bold;
+          font-family: $jost;
+          @media screen and (min-width: 992px) {
+            font-size: $normal-font;
+          }
+          &:focus {
+            box-shadow: $shadow;
+          }
+          &:hover {
+            box-shadow: $shadow;
+          }
+        }
+        button {
+          width: 45%;
+          background-color: $primary-500;
+          color: $white;
+          border: none;
+          cursor: pointer;
+          height: 3.5rem;
+          font-size: $very-small-font;
+          font-weight: $semi-bold;
+          font-family: $jost;
+          @media screen and (min-width: 992px) {
+            font-size: $normal-font;
+          }
+          &:hover {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .cartPayment__button {
+    margin-top: $m-2;
+    button {
+      width: 100%;
+      background-color: $primary-500;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      height: 4.5rem;
+      font-size: $medium-font;
+      font-weight: $semi-bold;
+      font-family: $jost;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+/*********** Google Font ***/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.2%;
+}
+/*********** Sass Variables ***/
+/******* Colors ***/
+$dark: #000000;
+$dark-500: gray;
+$dark-300: #d2d2d2;
+$dark-100: #f5f5f5;
+$white: #ffffff;
+$warning: #ffba00;
+$danger: #ff1745;
+$success: #05aa05;
+$info: #00efd2;
+$primary-500: #1185ed;
+$primary: #0676d8;
+
+/******* Border ***/
+$border-dark-300: 1px solid $dark-300;
+$border-dark-100: 1px solid $dark-100;
+$border-dark: 1px solid $dark;
+$border-danger: 1px solid $danger;
+
+/******* Shadow ***/
+$shadow-side: 2px 2px 6px #00000030;
+$shadow-all: 0 0 35px #00000020;
+
+/******* Transition ***/
+$transition: ease-in all 0.3s;
+
+/******* Font Size ***/
+$big-font: 2.8rem;
+$medium-icon: 2.2rem;
+$medium-font: 1.8rem;
+$normal-font: 1.6rem;
+$small-font: 1.4rem;
+$very-small-font: 1.2rem;
+@media screen and (min-width: 768px) {
+  $big-font: 3.2rem;
+  $medium-font: 2.2rem;
+  $medium-icon: 2.5rem;
+  $normal-font: 1.8rem;
+  $small-font: 1.5rem;
+  $very-small-font: 1.2rem;
+}
+
+/******* Font Family ***/
+$roboto: Roboto, Helvetica, Arial, sans-serif;
+$quicksand: "Quicksand", sans-serif;
+$josefin: "Josefin Sans", sans-serif;
+$jost: "Jost", sans-serif;
+$dancing: "Dancing Script", cursive;
+
+/******* Font Weight ***/
+$regular: 400;
+$semi-bold: 500;
+$bold: 600;
+$bolder: 700;
+
+/******* Margins ***/
+$m-0-5: 0.5rem;
+$m-1: 1rem;
+$m-1-5: 1.5rem;
+$m-2: 2rem;
+$m-2-5: 2.5rem;
+$m-3: 3rem;
+$m-3-5: 3.5rem;
+$m-4: 4rem;
+$m-5: 5rem;
+
+/******* Paddings ***/
+$p-0-5: 0.5rem;
+$p-1: 1rem;
+$p-1-5: 1.5rem;
+$p-2: 2rem;
+$p-2-5: 2.5rem;
+$p-3: 3rem;
+$p-3-5: 3.5rem;
+$p-4: 4rem;
+
+/* Sass Variables*/
+$dark: #000000;
+$white: #ffffff;
+$warning: #ffba00;
+$danger: #ff1745;
+$success: #05aa05;
+$info: #00efd2;
+// $primary: #1185ed;
+$primary-dark: #0676d8;
+$original-gray: gray;
+$gray: #d2d2d2;
+$light: #f5f5f5;
+$border-gray: 1px solid $gray;
+$border-dark: 1px solid $dark;
+$border-light: 1px solid $light;
+$border-danger: 1px solid $danger;
+$shadow: 2px 2px 6px #00000030;
+$shadow-all: 0 0 35px #00000020;
+$transition: ease-in-out all 0.3s;
+
+/*********** Base Css ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $jost;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/*********** Reuseable Css ***/
+.container {
+  padding: $p-1-5 3rem;
+  @media screen and (min-width: 768px) {
+    padding: $p-1-5 5rem;
+  }
+  @media screen and (min-width: 992px) {
+    padding: $p-1-5 7rem;
+  }
+}
+
+/*********** Scrollbar Css ***/
+::-webkit-scrollbar {
+  width: 1rem;
+  background: $dark-100;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $dark-300;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: $dark-500;
+}
+/*********** Toast Notification Css ***/
+.css-18gu508-Content {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.css-1klfh0r-Button {
+  display: flex;
+  align-items: center;
+}
+.css-1cbc3rp-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*********** Loading Css ***/
+.loading__global {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $dark-100;
+  opacity: 1;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Implement all Sass file */
+@import "../Components/Header/Header.scss";
+@import "../Components/MobileNav/MobileNav.scss";
+@import "../Components/Banner/Banner.scss";
+@import "../Components/BannerMarquee/BannerMarquee.scss";
+@import "../Components/Products/Products.scss";
+@import "../Components/ProductSlider/ProductSlider.scss";
+@import "../Components/Footer/Footer.scss";
+@import "../Components/FooterCounter/FooterCounter.scss";
+@import "../Components/FooterIcons/FooterIcons.scss";
+@import "../Components/FooterLinks/FooterLinks.scss";
+@import "./Screens/ProductScreen.scss";
+@import "../Components/ProductDetails/ProductDetails.scss";
+@import "./Screens/LoginScreen.scss";
+@import "./Screens/SignupScreen.scss";
+@import "./Screens/CartScreen.scss";
+@import "../Components/CartDetails/CartDetails.scss";
+@import "../Components/CartPayment/CartPayment.scss";
+@import "./Screens/PaymentMethodScreen.scss";
+@import "../Components/MultiStepNav/MultiStepNav.scss";
+@import "./Screens/PlaceOrderScreen.scss";
+@import "../Components/OrderSummery/OrderSummery.scss";
+@import "./Screens/OrderScreen.scss";
+@import "./Screens/UserProfileScreen.scss";
+
+// not responsive
+@import "../Components/DashboardLayout/DashboardLayout.scss";
+@import "../Components/DashboardMenu/DashboardMenu.scss";
+@import "./Screens/AddProductScreen.scss";
+@import "./Screens/ProductListScreen.scss";
+@import "./Screens/UserListScreen.scss";

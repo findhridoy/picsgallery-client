@@ -1,0 +1,53 @@
+.mobileNav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-color: $white;
+  box-shadow: $shadow-all;
+  z-index: -1;
+  padding: $p-4;
+  transition: $transition;
+  .mobileNav__list {
+    .mobileNav__item {
+      .mobileNav__link {
+        display: flex;
+        align-items: center;
+        padding: $p-1;
+        background-color: $white;
+        margin-top: $m-1;
+        font-size: $normal-font;
+        font-weight: $semi-bold;
+        color: $dark;
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+          background-color: $dark-100;
+        }
+        .global__icon {
+          margin-right: $m-1;
+          font-size: $medium-icon;
+        }
+        .mobileNav__cart {
+          font-family: $jost;
+          width: 2.6rem;
+          height: 2.6rem;
+          border-radius: 50%;
+          text-align: center;
+          font-size: $small-font;
+          font-weight: $semi-bold;
+          background-color: $danger;
+          color: $white;
+          border: none;
+          position: absolute;
+          left: 70%;
+          top: -20%;
+        }
+      }
+    }
+  }
+}
+.openNav {
+  right: 0;
+}

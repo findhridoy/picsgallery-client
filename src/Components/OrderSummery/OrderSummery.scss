@@ -1,0 +1,63 @@
+.orderSummery {
+  // position: sticky;
+  // top: 4%;
+  box-shadow: $shadow-all;
+  padding: 3rem 4rem;
+  .orderSummery__title {
+    font-size: $medium-font;
+    font-weight: $semi-bold;
+    padding-bottom: $p-2;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    @media screen and (min-width: 992px) {
+      font-size: $medium-icon;
+    }
+  }
+  .orderSummery__amount,
+  .orderSummery__items {
+    display: flex;
+    justify-content: space-between;
+    border-top: $border-dark-300;
+    padding: $p-2 0;
+    .amount__order-total,
+    .items__order-total {
+      font-size: $small-font;
+      font-weight: $semi-bold;
+      @media screen and (min-width: 992px) {
+        font-size: $normal-font;
+      }
+    }
+    .amount__price,
+    .items__length {
+      font-size: $small-font;
+      font-weight: $bold;
+      text-align: right;
+      @media screen and (min-width: 992px) {
+        font-size: $normal-font;
+      }
+    }
+  }
+  .orderSummery__amount {
+    border-bottom: $border-dark-300;
+  }
+  .orderSummery__button {
+    margin-top: $m-2;
+    button {
+      width: 100%;
+      background-color: $primary-500;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      height: 4rem;
+      font-size: $normal-font;
+      font-weight: $semi-bold;
+      font-family: $jost;
+      @media screen and (min-width: 992px) {
+        height: 4.5rem;
+      }
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}

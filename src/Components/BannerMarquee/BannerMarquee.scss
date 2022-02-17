@@ -1,0 +1,68 @@
+.banner__marquee {
+  margin-top: $m-3;
+  .bannerMarquee__free,
+  .bannerMarquee__premium {
+    p {
+      text-align: center;
+      margin-bottom: $m-1-5;
+      font-size: $big-font;
+      font-weight: $bold;
+      @media screen and (min-width: 576px) {
+        margin-bottom: $m-2;
+        margin-left: $m-3;
+        text-align: left;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: $m-2-5;
+        margin-left: $m-5;
+      }
+      @media screen and (min-width: 992px) {
+        margin-bottom: $m-3;
+        margin-left: 7rem;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: $m-3-5;
+      }
+    }
+    .banner__marquee-image {
+      img {
+        height: 25rem;
+        width: 15rem;
+        margin: 0 $m-0-5;
+        object-fit: cover;
+        object-position: center;
+        @media screen and (min-width: 576px) {
+          height: 26rem;
+          width: 16rem;
+        }
+        @media screen and (min-width: 768px) {
+          height: 27rem;
+          width: 17rem;
+        }
+        @media screen and (min-width: 992px) {
+          height: 28rem;
+          width: 17rem;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 29rem;
+          width: 18rem;
+        }
+      }
+    }
+  }
+  .bannerMarquee__premium {
+    margin-top: $m-2-5;
+    @media screen and (min-width: 576px) {
+      margin-top: $m-3;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: $m-3-5;
+    }
+    @media screen and (min-width: 992px) {
+      margin-top: $m-4;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: $m-5;
+    }
+  }
+}

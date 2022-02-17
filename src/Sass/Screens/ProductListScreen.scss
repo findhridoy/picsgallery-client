@@ -1,0 +1,88 @@
+.productList {
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  .productList__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .productList__list {
+    .productList__table {
+      margin-top: 3rem;
+      width: 100%;
+      border-collapse: collapse;
+
+      td {
+        border: $border-gray;
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      th {
+        background-color: $gray;
+        border: $border-dark;
+        padding: 1rem;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        &:last-child {
+          text-align: center;
+        }
+      }
+      tr {
+        &:nth-child(even) {
+          background-color: $light;
+        }
+      }
+      tr {
+        td {
+          .productList__table-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            button {
+              font-size: 2rem;
+              border: none;
+              background-color: transparent;
+              cursor: pointer;
+              border-radius: 50%;
+              width: 3rem;
+              height: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:hover {
+                background-color: $gray;
+              }
+            }
+          }
+          &:first-child {
+            position: relative;
+            .id__image-hover {
+              position: absolute;
+              height: 31rem;
+              width: 18rem;
+              left: 100%;
+              top: 0;
+              z-index: 5;
+              display: none;
+              img {
+                height: 31rem;
+                width: 18rem;
+                object-fit: cover;
+              }
+            }
+            &:hover {
+              .id__image-hover {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      // tr:hover {
+      //   background-color: $light;
+      // }
+    }
+  }
+}

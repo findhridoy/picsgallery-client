@@ -1,0 +1,121 @@
+.signup {
+  min-width: 34rem;
+  max-width: 60rem;
+  background-color: $dark-100;
+  border: $border-dark-100;
+  margin: $m-2-5 auto 0 auto;
+  box-shadow: $shadow-all;
+  .signup__title {
+    text-align: center;
+    padding: $p-2 0;
+    background-color: $white;
+    font-size: $big-font;
+    font-weight: $bold;
+    border-bottom: $border-dark-100;
+  }
+  .signup__form {
+    padding: $p-2;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      padding: $p-2 $p-4;
+    }
+    .signup__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $m-1;
+      .signup__label {
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        margin-bottom: $m-0-5;
+        @media screen and (min-width: 992px) {
+          font-size: $normal-font;
+        }
+      }
+      input {
+        width: 100%;
+        border: $border-dark-300;
+        outline: none;
+        padding: $p-1;
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        font-family: $jost;
+        @media screen and (min-width: 992px) {
+          font-size: $normal-font;
+        }
+        &:focus {
+          box-shadow: $shadow;
+        }
+        &:hover {
+          box-shadow: $shadow;
+        }
+      }
+      .signup__ {
+        font-size: $very-small-font;
+        font-weight: 500;
+        color: $danger;
+        margin-top: 0.2rem;
+        @media screen and (min-width: 992px) {
+          font-size: $small-font;
+        }
+      }
+      .signup__create {
+        margin-top: $m-0-5;
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        text-align: center;
+        @media screen and (min-width: 992px) {
+          font-size: $normal-font;
+        }
+        .signup__link {
+          color: $primary;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .signup__checkbox {
+      display: flex;
+      align-items: center;
+      label {
+        font-size: $small-font;
+        font-weight: $semi-bold;
+        margin-left: $m-0-5;
+        @media screen and (min-width: 992px) {
+          font-size: $normal-font;
+        }
+      }
+    }
+    // .signup__forgot {
+    //   font-size: $small-font;
+    //   font-weight: $semi-bold;
+    //   color: $primary;
+    //   @media screen and (min-width: 992px) {
+    //     font-size: $normal-font;
+    //   }
+    //   &:hover {
+    //     text-decoration: underline;
+    //   }
+    // }
+
+    .signup__button {
+      width: 100%;
+      margin-top: $m-2;
+      background-color: $primary-500;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      padding: 1.2rem 0;
+      font-size: $medium-font;
+      font-weight: $semi-bold;
+      font-family: $jost;
+      @media screen and (min-width: 992px) {
+        font-size: $medium-icon;
+      }
+      &:hover {
+        background-color: $primary-dark;
+      }
+    }
+  }
+}

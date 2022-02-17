@@ -1,0 +1,26 @@
+.footerCounter {
+  margin-top: $m-1;
+  display: flex;
+  .footerCounter__item {
+    padding-right: $p-2;
+    &:nth-child(2) {
+      padding-left: $p-2;
+      border-left: $border-gray;
+      border-right: $border-gray;
+    }
+    &:last-child {
+      padding-left: $p-2;
+    }
+    .footerCounter__counter {
+      font-size: $medium-font;
+      font-weight: $bolder;
+      color: $info;
+      width: 5rem;
+      display: inline-block;
+    }
+    .footerCounter__text {
+      font-weight: $bold;
+      font-size: $normal-font;
+    }
+  }
+}

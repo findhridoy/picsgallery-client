@@ -1,0 +1,95 @@
+.productDetails {
+  border: $border-dark-100;
+  box-shadow: $shadow-all;
+  padding: $p-2-5;
+  @media screen and (min-width: 576px) {
+    padding: $p-3-5;
+  }
+  @media screen and (min-width: 992px) {
+    width: 100%;
+  }
+  .productDetails__title {
+    font-size: $normal-font;
+    font-weight: $semi-bold;
+    @media screen and (min-width: 992px) {
+      font-size: $medium-font;
+    }
+  }
+  .productDetails__author {
+    font-size: $very-small-font;
+    border-bottom: $border-dark-300;
+    padding-bottom: $p-0-5;
+    font-weight: $semi-bold;
+    @media screen and (min-width: 992px) {
+      font-size: $small-font;
+    }
+    span {
+      font-weight: $bold;
+      color: $primary;
+    }
+  }
+  .productDetails__description {
+    font-size: $small-font;
+    border-bottom: $border-dark-300;
+    padding: $p-1 0;
+    font-weight: $semi-bold;
+    margin-bottom: $m-1;
+    @media screen and (min-width: 992px) {
+      font-size: $normal-font;
+    }
+  }
+  .productDetails__size,
+  .productDetails__dimensions,
+  .productDetails__type,
+  .productDetails__category {
+    font-size: $small-font;
+    font-weight: $semi-bold;
+    color: $dark-500;
+    margin-top: $m-0-5;
+    @media screen and (min-width: 992px) {
+      font-size: $normal-font;
+    }
+    span {
+      font-weight: $bold;
+      color: $dark;
+    }
+  }
+  .productDetails__type {
+    span {
+      text-transform: uppercase;
+    }
+  }
+  .productDetails__category {
+    border-bottom: $border-gray;
+    padding-bottom: $p-1;
+    margin-bottom: $m-2;
+    span {
+      color: $warning;
+    }
+  }
+  .productDetails__button {
+    button {
+      width: 100%;
+      padding: 1.2rem 0;
+      font-size: $small-font;
+      font-weight: $bold;
+      background-color: $primary-500;
+      border: none;
+      color: $white;
+      cursor: pointer;
+      @media screen and (min-width: 992px) {
+        font-size: $normal-font;
+      }
+      &:hover {
+        background-color: $primary;
+      }
+      &:disabled,
+      &[disabled] {
+        background-color: $dark-300;
+        color: $dark-500;
+        pointer-events: auto;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

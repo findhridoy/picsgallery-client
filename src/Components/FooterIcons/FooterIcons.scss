@@ -1,0 +1,29 @@
+.footerIcons {
+  margin-top: $m-1-5;
+  margin-bottom: $m-1-5;
+  @media screen and (min-width: 576px) {
+    margin-bottom: 0;
+  }
+  ul {
+    display: flex;
+    // justify-content: space-between;
+    li {
+      margin-right: $m-1;
+      .footerIcons__item {
+        width: $m-3-5;
+        height: $m-3-5;
+        border: $border-gray;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $dark;
+        font-size: $normal-font;
+        transition: $transition;
+        &:hover {
+          border: $border-dark;
+        }
+      }
+    }
+  }
+}

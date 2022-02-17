@@ -1,0 +1,173 @@
+header {
+  border-bottom: $border-dark-300;
+  .header__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    // @media screen and (max-width: 768px) {
+    //   // padding: $p-1 0;
+    // }
+    .header__logo {
+      .logo {
+        font-family: $dancing;
+        font-weight: 700;
+        font-size: $big-font;
+      }
+    }
+    .header__search {
+      position: relative;
+      width: 100%;
+      margin: 0 $m-2;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      input {
+        padding: 1rem 1.5rem;
+        border: $border-dark-300;
+        width: 100%;
+        padding-left: $p-4;
+        outline: none;
+        font-size: $normal-font;
+        font-weight: $regular;
+        background-color: $dark-100;
+        font-family: $jost;
+
+        &::placeholder {
+          font-weight: $regular;
+          font-family: $jost;
+        }
+        &:hover {
+          box-shadow: $shadow;
+        }
+        &:focus {
+          box-shadow: $shadow;
+        }
+      }
+      .global__icon {
+        position: absolute;
+        left: $m-1;
+        top: 24%;
+        font-size: $medium-icon;
+        color: $dark;
+      }
+    }
+    .header__nav {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      .nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: $m-1;
+        .nav__item {
+          position: relative;
+          .nav__link {
+            font-size: $normal-font;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: $semi-bold;
+            color: $dark;
+            margin-bottom: $m-0-5;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+              text-decoration: underline;
+            }
+            .global__icon {
+              font-size: $medium-icon;
+              color: $dark;
+              position: relative;
+            }
+            .nav__cart {
+              font-family: $jost;
+              width: 2.6rem;
+              height: 2.6rem;
+              border-radius: 50%;
+              text-align: center;
+              font-size: $small-font;
+              font-weight: $semi-bold;
+              background-color: $danger;
+              color: $white;
+              border: none;
+              position: absolute;
+              left: 70%;
+              top: -20%;
+            }
+          }
+
+          .dropdown {
+            margin-left: $m-1-5;
+            box-shadow: $shadow;
+            width: 11.5rem;
+            border-radius: 2.5rem;
+            display: flex;
+            align-items: center;
+            height: 4.5rem;
+            padding-left: $p-0-5;
+            cursor: pointer;
+            img {
+              height: 3rem;
+              width: 3rem;
+              border-radius: 50%;
+            }
+            .dropdown__username {
+              margin-left: $m-0-5;
+              font-weight: $semi-bold;
+              font-size: $small-font;
+              color: $dark;
+            }
+            .activeUsername {
+              color: $primary;
+            }
+          }
+          .activeDropdown {
+            box-shadow: $shadow;
+            border-color: $primary-500;
+          }
+          .dropdown__menu {
+            position: absolute;
+            z-index: 5;
+            box-shadow: $shadow-all;
+            width: 18rem;
+            right: 0;
+            margin-top: $m-1-5;
+            padding: $p-0-5 0;
+            background-color: $white;
+            .dropdown__link {
+              margin: $m-1;
+              font-size: $normal-font;
+              font-weight: $semi-bold;
+              display: flex;
+              align-items: center;
+              padding: $p-1;
+              color: $dark;
+              cursor: pointer;
+              &:hover {
+                background-color: $dark-100;
+                box-shadow: $shadow;
+              }
+              span {
+                margin-left: $m-1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header__mobile--nav {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+        z-index: 15;
+        .global__icon {
+          font-size: $big-font;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
